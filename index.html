@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Level Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Multi-Level Tic-Tac-Toe</h1>
+        <div class="player-settings">
+            <div>
+                <label for="player1">Player 1 (X):</label>
+                <input type="text" id="player1" placeholder="Enter name">
+            </div>
+            <div>
+                <label for="player2">Player 2 (O):</label>
+                <input type="text" id="player2" placeholder="Enter name">
+            </div>
+            <div>
+                <label for="boardSize">Board Size:</label>
+                <select id="boardSize">
+                    <option value="3">3x3</option>
+                    <option value="4">4x4</option>
+                    <option value="5">5x5</option>
+                </select>
+            </div>
+            <div>
+                <label for="mode">Game Mode:</label>
+                <select id="mode">
+                    <option value="multiplayer">Multiplayer</option>
+                    <option value="singleplayer">Single Player</option>
+                </select>
+            </div>
+            <div id="difficultyContainer" style="display: none;">
+                <label for="difficulty">AI Difficulty:</label>
+                <select id="difficulty">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
+        </div>
+        <div id="grid" class="grid"></div>
+        <button id="restart">Restart Game</button>
+        <div class="message" id="message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
